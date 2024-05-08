@@ -84,7 +84,7 @@ RUN set -ex; \
     rm -rf docker
 
 FROM debian:bookworm-slim
-ARG DOCKER_VERSION=v24.0.7
+ARG DOCKER_VERSION=v26.1.1
 
 COPY --from=builder /opt /opt
 WORKDIR /opt
